@@ -23,7 +23,7 @@ def get_config():
 
     # model
     C.model = GPT.get_default_config()
-    C.model.model_type = 'gpt-mini'
+    C.model.model_type = 'gpt-nano'
 
     # trainer
     C.trainer = Trainer.get_default_config()
@@ -51,7 +51,7 @@ model = GPT(config.model)
 # construct the trainer object
 trainer = Trainer(config.trainer, model, train_dataset)
 
-path = ".//chargpt//weight//gpt-mini.pt"
+path = ".//chargpt//weight//gpt-nano_young.pt"
 model.load_state_dict(torch.load(path, map_location=torch.device('cpu')))
 model.eval()
 

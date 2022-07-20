@@ -29,7 +29,7 @@ class CharDataset(Dataset):
     @staticmethod
     def get_default_config():
         C = CfgNode()
-        C.block_size = 128
+        C.block_size = 200
         return C
 
     def __init__(self, config, data):

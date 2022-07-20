@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="Text Generator", page_icon="💬")
+
 st.title("💬🦜 Text Generator")
 st.subheader("GPT2 Thai Text Generator")
 
